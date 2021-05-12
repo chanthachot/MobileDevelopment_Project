@@ -11,9 +11,9 @@
 
 ## Installation
 
-1. Dump Database **trader.sql** ในโฟลเดอร์ **database** ลงใน PHPMyadmin
-2. ใช้ Android Studio เปิดโฟลเดอร์ **trader** และรันลง Emulator
-3. ใช้ Node ในการเปิด API ในโฟลเดอร์ **traderAPI**
+1. Dump Database *trader.sql* ในโฟลเดอร์ *database* ลงใน PHPMyadmin
+2. ใช้ Android Studio เปิดโฟลเดอร์ *trader* และรันลง Emulator
+3. ใช้ Node ในการเปิด API ในโฟลเดอร์ *traderAPI*
 
 ## หน้าจอการทำงานของแอปพลิเคชัน
 
