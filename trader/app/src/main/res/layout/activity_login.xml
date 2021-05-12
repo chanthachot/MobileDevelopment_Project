@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#F0F0F0"
+        android:text="เข้าสู่ระบบ">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerInParent="true">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:id="@+id/log_username"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/log_password"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="เข้าสู่ระบบ"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_login"
+            android:textColor="#F0F0F0"
+            android:onClick="clickLogin"
+            android:id="@+id/btnLogin"/>
+        <TextView
+            android:id="@+id/clickRegister"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewEnd"
+            android:text="สมัครสมาชิก">
+        </TextView>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/close_btn_login"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/whitecloseicon">
+    </ImageView>
+</RelativeLayout>

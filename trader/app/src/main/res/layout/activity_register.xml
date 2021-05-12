@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#F0F0F0"
+        android:text="สมัครสมาชิก"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerInParent="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ชื่อ"
+            android:id="@+id/reg_name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ชื่อผู้ใช้งาน"
+            android:id="@+id/reg_username"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="รหัสผ่าน"
+            android:id="@+id/reg_password"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ยืนยันรหัสผ่าน"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_register"
+            android:onClick="clickRegister"
+            android:text="สมัครสมาชิก"
+            android:textSize="20dp"
+            android:textColor="#F0F0F0" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close_btn_register"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/whitecloseicon">
+    </ImageView>
+</RelativeLayout>

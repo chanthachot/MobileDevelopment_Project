@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D6D6">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddItemActivity">
+
+<!--    <TextView-->
+<!--        android:id="@+id/imageText"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="15sp"-->
+<!--        android:text="Image : "-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/date_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="15sp"-->
+<!--        android:text="date : "-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/time_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="15sp"-->
+<!--        android:text="time : "-->
+<!--        />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/ic_image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/additem_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ชื่อสินค้า"
+            android:background="@null"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000" />
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/input_name"
+            android:background="?android:attr/listDivider" />
+
+        <EditText
+            android:id="@+id/input_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider1"
+            android:layout_marginTop="15dp"
+            android:hint="รายละเอียด"
+            android:background="@null"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/input_desc"
+            android:background="?android:attr/listDivider" />
+
+        <EditText
+            android:id="@+id/input_change_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider2"
+            android:layout_marginTop="15dp"
+            android:hint="ต้องการแลกเปลี่ยนกับ"
+            android:layout_marginBottom="15dp"
+            android:background="@null"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
